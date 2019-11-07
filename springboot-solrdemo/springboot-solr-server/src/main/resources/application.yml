@@ -1,0 +1,19 @@
+server:
+  context-path: /
+  port: 80
+spring:
+  data:
+    solr:
+      host: http://127.0.0.1:8983/solr/schema-demo
+
+logging:
+  #file: ./logs/spring-boot-logging.log
+  level:
+    root: INFO
+    org.apache.solr: DEBUG
+
+solr:
+  remoteMode: false
+  instanceDir: C:\workspace\springboot-solrdemo\src\main\etc\solr
+  host: http://127.0.0.1:8983/solr
+  dataDir: data
